@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/png" href="scss/favicon.ico"/>	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css" >
+		<link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/jquery.cookie.min.js"></script>
+		<script src="js/script.js"></script>
+    <title>Toy-Do </title>
+</head>
+	<body>
+	<script>
+		function isIE() {
+  ua = navigator.userAgent;
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  
+  return is_ie; 
+}
+/* Create an alert to show if the browser is IE or not */
+if (isIE()){
+    alert('Firefox veya Chrome önerilmektedir..');
+}
+		</script>
+
+		
+</div>
+		<div class="container">
+			<div class="heading">
+    <img class="heading__img" src="scss/laptop.svg">
+    <h1 class="heading__title">To-Do List</h1>
+  </div>
+		<span class="panel-title text-center"><b>Bu hafta yapacaklarım :)</b></span>
+			<div id="list" class="form">
+				<div id="title" class="panel-heading" style="visibility: hidden">
+					<h1 class="panel-title text-center">&nbsp;</h1>
+				</div>
+				<div id="input" class="panel-body" >
+					<div class="input-group">
+						<input name="add-to-list" type="text" class="form-control" placeholder="Boş durma, bir şeyler ekle :)" />
+						<span class="input-group-btn"><button id="add" class="btn btn-primary">Ekle</button></span>
+					</div>
+					<br />
+					<div class="btn-group">
+						<button id="clear" class="btn btn-danger">Temizle</button>
+					</div>
+				</div>
+				<div id="script-error" class="panel-body bg-warning text-warning">
+					<span class="glyphicon glyphicon-exclamation-sign"></span> Browser'ınız bu uygulama için uygun değildir. Firefox ve Chrome önerilir.
+				</div>
+				
+			</div>
+			</div>
+		  <footer class="footer">
+				<div class="footer">
+					<p>Girdiler cookie olarak 90 gün süresince tutulmaktadır. Bu sebeple max uzunluğu mevcuttur. (4093byte) || Browser değiştirdiğinizde veya cache temizlediğinizde girdileriniz yok olacaktır. || Server tarafında hiç bir veri saklanmaz. || TOY@2019 </p>
+				</div>
+			</footer>
+			
+	
+	</body>
+</html>
